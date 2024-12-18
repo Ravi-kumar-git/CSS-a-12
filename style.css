@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    /* height: 300px; */
+    /* width: 300px; */
+    /* background-color: red; */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: lightcoral;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    font-size: 10x;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 150px;
+    height: 200px;
+}
+
+
+@media screen and (width>=768px) and (width<=1024px) {
+    body {
+        background-color: lightblue;
+    }
+
+}
+
+@media screen and (width>=600px) and (width<=1200px) {
+    .main-container>p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (width>=480px) {
+    .main-container {
+        display: flex;
+    }
+
+}
+
+@media all and (width>=500px) and (width<=800px) {
+    .main-container>h1 {
+        color: green;
+    }
+
+}
+
+@media screen and (width<=400px) {
+    .main-container>img {
+        display: none;
+    }
+
+}
+
+@media screen and (width>=1024px) {
+    .main-container {
+        padding: 20px;
+    }
+}
+
+@media screen and (width>=600px) and (width<=1200px) {
+    .main-container>header {
+        background-color: lightgray;
+    }
+}
+
+@media screen and (width<=480px) {
+    .main-container>p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (width<=600px) {
+    .main-container>img {
+        width: 100%;
+    }
+}
+
+@media screen and (width>=700px) and (width<=1200px) {
+    .main-container>a {
+        color: blue;
+    }
+
+}
+
+@media screen and (width>=500px) and (width<=800px) {
+    .main-container>h2 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (width>=1024px) {
+    .main-container {
+        border: 2px solid black;
+    }
+
+}
